@@ -1,0 +1,55 @@
+print('ARITHMETIC CALCULATOR')
+def Display_Menu():
+    print('Menu')
+    print('^^^^')
+    print('1. Addition')
+    print('2. Multiplication')
+    print('3. Subtraction')
+    print('4. Modulus')
+    print('5. Average')
+def Add(fnum,snum):
+    return fnum+snum
+def Multi(fnum,snum):
+    return fnum*snum
+def subtract(fnum,snum):
+    return fnum-snum
+def Mod (fnum,snum):
+    return fnum%snum
+def Average(fnum,snum):
+    return (fnum+snum)/2
+Display_Menu()
+
+while True:
+    name=input('Enter your name:')
+    choice=input('Select choice(1-5):')
+
+    fnum=int(input('Enter first number:'))
+    snum=int(input('Enter second number:'))
+
+    if choice=='1':
+        print('Results for Addition is:', Add(fnum,snum) )
+    elif choice=='2':
+        print('Results for Multiplication is:', Multi(fnum,snum))
+    elif choice=='3':
+        print('Results for Subtraction is:', subtract(fnum,snum))
+    elif choice=='4':
+        print('Results for Modulus is:', Mod(fnum,snum))
+    elif choice=='5':
+        print('Results for Average is:', Average(fnum,snum))
+    else:
+        print('Invalid Selection')
+    confirm=input('Enter y or Y to continue:')
+    if confirm=='y' or confirm=='Y':
+        continue
+    else:
+        break
+    print(name,'you quit Thank for using this programS')
+
+
+
+
+    
+    
+    
+    
+
